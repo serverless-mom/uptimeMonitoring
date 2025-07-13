@@ -1,6 +1,6 @@
 import { UrlMonitor, UrlAssertionBuilder } from 'checkly/constructs'
 
-new UrlMonitor('url-pinger-1', {
+new UrlMonitor('url-pinger-3', {
   name: 'URL pinger 1',
   activated: true,
   request: {
