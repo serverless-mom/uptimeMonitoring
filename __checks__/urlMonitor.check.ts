@@ -1,11 +1,12 @@
 import { UrlMonitor, UrlAssertionBuilder } from 'checkly/constructs'
 
-new UrlMonitor('url-ping-1', {
+new UrlMonitor('url-pinger-1', {
   name: 'URL pinger 1',
   activated: true,
   request: {
-    method: 'GET',
-    url: 'https://api.checklyhq.com/v1/echo/get',
+    url: 'https://httpbin.org/get',
+    skipSSL: false,
+    followRedirects: true,
     assertions: [
       UrlAssertionBuilder.statusCode().equals(200),
     ]
