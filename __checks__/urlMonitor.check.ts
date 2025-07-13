@@ -1,6 +1,7 @@
-import { UrlMonitor, UrlAssertionBuilder } from 'checkly/constructs'
+import { Frequency, UrlMonitor, UrlAssertionBuilder } from 'checkly/constructs'
 
 new UrlMonitor('url-pinger-1', {
+  frequency: Frequency.EVERY_10S,
   name: 'URL pinger 1',
   activated: true,
   request: {
