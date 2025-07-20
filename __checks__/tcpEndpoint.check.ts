@@ -1,4 +1,4 @@
-import { TcpMonitor, TcpAssertionBuilder } from 'checkly/constructs'
+/* import { TcpMonitor, TcpAssertionBuilder } from 'checkly/constructs'
 
 new TcpMonitor('hello-tcp-1', {
   name: 'Hello TCP',
@@ -15,4 +15,4 @@ new TcpMonitor('hello-tcp-1', {
         TcpAssertionBuilder.responseData().contains('ping')
     ]
   }
-})
+}) */

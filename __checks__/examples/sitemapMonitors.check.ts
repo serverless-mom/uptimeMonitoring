@@ -3,7 +3,9 @@
 
 import { Frequency, UrlMonitor, UrlAssertionBuilder } from 'checkly/constructs'
 
-//grepped a sitemap.xml file for an array of URLs
+// see the Checkly Blog for details on how this array 
+// was generated using Claude Code
+// grepped a sitemap.xml file for an array of URLs
 
 const sitemapUrls = [
   'https://www.checklyhq.com/',
@@ -62,8 +64,8 @@ const sitemapUrls = [
 
 sitemapUrls.forEach((url, index) => {
   const urlPath = new URL(url).pathname.replace(/\//g, '-').replace(/^-+|-+$/g, '') || 'root'
-  const monitorId = `checkly-${urlPath}-${index}`
-  const monitorName = `Checkly ${urlPath.replace(/-/g, ' ')} Monitor`
+  const monitorId = `pinger-${urlPath}-${index}`
+  const monitorName = `Page Monitor \"${urlPath.replace(/-/g, ' ')}\"`
 
 //create each monitor with a five minute interval
   new UrlMonitor(monitorId, {
