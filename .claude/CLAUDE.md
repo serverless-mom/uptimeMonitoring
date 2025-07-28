@@ -65,10 +65,10 @@ __checks__/
         └── urlArray.json           # Generated URL list
 ```
 
-## Development Notes
+## Development Notes4
 
 - Check files use TypeScript and import constructs from `checkly/constructs`
 - Some example files are commented out to prevent accidental deployment
 - The project uses CommonJS module format (`"type": "commonjs"`)
 - Monitors are created by instantiating Checkly construct classes with unique logical IDs
-- examine checkly.rules.md for code generation rules
+- examine checkly.rules.md for code generation rules- examine checkly.rules.md for code generation rules
