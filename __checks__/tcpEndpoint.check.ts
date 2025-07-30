@@ -15,4 +15,4 @@ new TcpMonitor('hello-tcp-2', {
         TcpAssertionBuilder.responseData().contains('ping')
     ]
   }
-})
+}) 
